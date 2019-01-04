@@ -1,0 +1,5 @@
+# Rollie
+Client- Server Dice Roller
+
+Basic Dice Rolling app that rolls any number of D4, D6, D8, D10, D12, D20 or D100s. Recommended for groups far
+from one another, especially anything D&D.
