@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<h1>The XMLHttpRequest Object</h1>
+<div id="info"></div>
+
+<script>
+$.ajax({
+    url:"https://api.myjson.com/bins",
+    type:"POST",
+    data:'{"addition":{"a":"%str%"}}',
+    contentType:"application/json; charset=utf-8",
+    dataType:"json",
+    success: function(data, textStatus, jqXHR){
+	var str = "{\"addition\":{\"Data\":\""+data.uri+"\"}}";
+	var obj = JSON.parse(str);
+      document.getElementById("info").innerHTML = JSON.stringify(obj);
+    }
+});
+</script>
+</body>
+</html>
